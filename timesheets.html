@@ -1,0 +1,235 @@
+<html>
+<head>
+<title> Staff Time Sheet </title>
+<!-- <script src = "timesheetsScript.js"></script> -->
+<style>
+        #heads {
+            font-family: sans-serif;
+                }
+                #p {
+                    font-family: sans-serif;
+                }
+#TS {
+font-family: sans-serif;
+border-collapse: collapse;
+width: 70%;
+margin-left:15%;
+margin-right: 15%
+}
+#TS td, #TS th {
+border: 1px solid black;
+padding: 8px;
+}
+#TS th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #f33f3f;
+color: floralwhite;
+}
+            #ABR {
+            font-family:sans-serif;
+                border-collapse: collapse;
+                width: 70%;
+                margin-left:15%;
+                margin-right: 15%
+                }
+            #ABR td, #ABR th {
+            border: 1px solid black;
+            padding: 5px;
+                }
+                #ABR th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #a6a6a6;
+color: floralwhite;
+}
+#createButton {
+    border: 1px solid darkgreen;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    display: inline;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#createButton:hover {
+    background-color: green;
+    color: whitesmoke;
+}
+#deleteButton{
+    border:1px solid darkred;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    display: inline;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#deleteButton:hover {
+    background-color: red;
+    color: whitesmoke;
+}
+           
+</style>
+</head>
+<body>
+    <h1 id="heads"> Week of</h1>
+    <p id='p'>Subtype abbreviations are found below this table</p>
+    <form action = "timesheet.php" method = "GET">
+        <table id="TS">
+            <tbody>
+                <th>Hours</th>
+                <th>Type</th>
+                <th>Subtype</th>
+                <tr>
+                    <td contenteditable><input type = "number" name = "Monday" id = "Monday"></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+                <tr>
+                    <td contenteditable><input type = "number"/></td>
+                    <td contenteditable>
+                        <select>
+                            <option value="B">Billable</option>
+                                <option value="UnB">UnBillable</option>
+                        </select>
+                    </td>
+                    <td contenteditable></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type ="submit">
+    </form>
+            <h2 id="heads">Subtype choices</h2>
+            <p id="heads">Please only use the abbreviations or the project number</p>
+            <table id="ABR">
+            <tbody>
+            <th>Abrv</th>
+                <th>Meaning</th>
+                <tr>
+                <td>BD</td>
+                    <td>Business Development/Marketing/Proposal Writing</td>
+                </tr>
+                <tr>
+                <td>OH</td>
+                    <td>Overhead (Dept Meetings, IT issues, Procurement issues, Training)</td>
+                </tr>
+                <tr>
+                <td>MGT</td>
+                    <td>Student/Personnel Management</td>
+                </tr>
+                <tr>
+                <td>ID</td>
+                    <td>Idle Time</td>
+                </tr>
+                <tr>
+                <td>IRD</td>
+                    <td> Internal Research and Development</td>
+                </tr>
+                <tr>
+                <td>VAC</td>
+                    <td>Vacation/Sick Leave/Holiday</td>
+                </tr>
+                </tbody>
+            </table>
+</body>
+</html>
